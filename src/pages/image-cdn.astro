@@ -65,41 +65,24 @@ detection, so format is set to WebP.
                     return ctx === 'dev' ? devModeWarning : null;
                 }}
             />
-            <h1>Parcours</h1>
-        </section>
-        <section>
-            <Markdown content={astroImageSnippet} class="mb-8" />
-            <figure>
-                <Image src={corgi} alt="Corgi" class="border-2 border-white rounded-lg" />
-                <figcaption class="mt-2 text-sm italic">
-                    Credit: photo by <a href="https://unsplash.com/@alvannee">Alvan Nee</a> on
-                    <a href="https://unsplash.com/photos/long-coated-white-and-brown-dog-lvFlpqEvuRM"> Unsplash </a>
-                </figcaption>
-            </figure>
-        </section>
-        <section>
-            <Markdown content={originalVsCdnSnippet} class="mb-8" />
-            <div class="diff aspect-[3/2] rounded-lg border-2 border-white">
-                <div class="diff-item-1">
-                    <div>
-                        <div class="relative">
-                            <span class="hidden absolute py-1.5 px-2.5 text-sm rounded-lg bg-neutral-900/70 top-2.5 right-2.5"></span>
-                            <img srcset={sampleImageSrcSet} alt="Corgi" />
-                        </div>
-                    </div>
-                </div>
-                <div class="diff-item-2">
-                    <div>
-                        <div class="relative">
-                            <span class="hidden absolute py-1.5 px-2.5 text-sm rounded-lg bg-neutral-900/70 top-2.5 left-2.5"></span>
-                            <img src={sampleImage} alt="Corgi" />
-                        </div>
-                    </div>
-                </div>
-                <div class="diff-resizer"></div>
-            </div>
-        </section>
-    </div>
+           <h1>Parcours</h1>
+</section>
+<section>
+    <!-- Description du parcours académique -->
+    <Markdown content="Je suis actuellement étudiant en Master en Ingénierie des Systèmes Complexes à l'Ecole d’Ingénieur du Littoral Côte d’Opale. Ce programme pluridisciplinaire me permet de développer des compétences avancées en modélisation, optimisation et gestion des systèmes complexes, avec un fort accent sur la Data Science, l'analyse des données et le traitement d'images." class="mb-8" />
+    
+    <!-- Image illustrant ton parcours (par exemple ton université ou un projet) -->
+    <figure>
+        <Image src="ton-image-universitaire.jpg" alt="Image de l'université ou projet" class="border-2 border-white rounded-lg" />
+        <figcaption class="mt-2 text-sm italic">
+            Crédit : photo par [nom du photographe ou source] sur 
+            <a href="https://unsplash.com">Unsplash</a> ou une autre source
+        </figcaption>
+    </figure>
+</section>
+<section>
+    <!-- Description d'un projet spécifique dans ton parcours -->
+
 </Layout>
 
 <script>
