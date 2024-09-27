@@ -17,11 +17,79 @@ Object.entries(headers).map(([k, v]) => {
 const exampleTag = tags[randomInt(0, tags.length - 1)];
 ---
 
-<Layout title="Revalidation">
-    <h1 class="mb-10">abdol</h1>
-    <button class="revalidate-button btn btn-primary" data-tag={exampleTag}>homme </button>
-    <button class="btn btn-primary" onclick="location.reload()">homme</buton>
-</Layout>
+<section id="about">
+    <h1>À Propos</h1>
+    <div class="bio">
+        <h2>Présentation</h2>
+        <p>
+            Je m'appelle Abdelouahed, étudiant en Master d'Ingénierie des Systèmes Complexes à l'EILCO (École d’Ingénieurs du Littoral Côte d’Opale) en France. Originaire du Maroc, j'ai obtenu ma Licence en Sciences Mathématiques et Informatique à la Faculté des Sciences de Meknès. Mon parcours académique combine une solide formation théorique en mathématiques et en informatique, ainsi qu'une spécialisation en modélisation, optimisation et analyse de données complexes.
+        </p>
+        
+        <h2>Parcours Académique</h2>
+        <ul>
+            <li><strong>Master en Ingénierie des Systèmes Complexes</strong> – EILCO, France
+                <ul>
+                    <li>Compétences en modélisation, optimisation et analyse des systèmes complexes.</li>
+                    <li>Focus sur la science des données, la programmation avancée (Python, ETL), et les systèmes de recommandation.</li>
+                </ul>
+            </li>
+            <li><strong>Licence en Sciences Mathématiques et Informatique</strong> – Faculté des Sciences de Meknès, Maroc
+                <ul>
+                    <li>Solides compétences en algèbre linéaire, probabilités, statistiques, recherche opérationnelle.</li>
+                    <li>Expérience en programmation avec Java, C, et gestion de bases de données (SQL Server, Oracle, PostgreSQL).</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Expériences Professionnelles</h2>
+        <ul>
+            <li><strong>Stagiaire (Stage de fin d'études)</strong> – TBI, Meknès (Mars 2023 – Juin 2023)
+                <ul>
+                    <li>Projet : Développement d’un système de recommandation touristique personnalisé.</li>
+                    <li>Technologies : Facebook API, Google API, Python, ETL.</li>
+                </ul>
+            </li>
+            <li><strong>Stagiaire</strong> – FSM, Meknès (Janvier 2022 – Février 2022)
+                <ul>
+                    <li>Projet : Développement d’une application web pour la gestion d’une bibliothèque.</li>
+                    <li>Technologies : Django, SQLite, Python, Méthodologie Agile Scrum.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Bénévolat et Engagement</h2>
+        <ul>
+            <li><strong>Membre bénévole</strong> – L’Association LAFEV
+                <ul>
+                    <li>Soutien scolaire et accompagnement d’élèves en difficulté dans le cadre du programme « Diplôme d'Engagement Étudiant ».</li>
+                </ul>
+            </li>
+            <li><strong>Membre du club de football</strong> – Faculté des Sciences de Meknès
+                <ul>
+                    <li>Participation active dans l'organisation des compétitions sportives.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Vision et Ambitions</h2>
+        <p>
+            En tant qu'étudiant passionné par la science des données et les systèmes complexes, je me vois évoluer dans le domaine de l'analyse de données et du développement de solutions innovantes pour résoudre des problèmes concrets. Je suis motivé à rejoindre une équipe où je pourrai continuer à apprendre et relever de nouveaux défis techniques.
+        </p>
+        <p>
+            Ma curiosité naturelle et ma soif d'apprendre me poussent à toujours rechercher l'innovation, que ce soit dans le domaine de la data science, du traitement d'images, ou des systèmes intelligents. À long terme, je souhaite contribuer à des projets à fort impact qui tirent parti de l'intelligence artificielle pour améliorer la prise de décision dans divers secteurs.
+        </p>
+        
+        <h2>Contact</h2>
+        <p>
+            N’hésitez pas à me contacter pour toute opportunité ou pour discuter de collaborations potentielles. Je suis toujours prêt à explorer de nouveaux horizons et à relever des défis stimulants.
+        </p>
+
+        <figure>
+            <img src="chemin/vers/ta/photo.jpg" alt="Photo de Abdelouahed" class="border-2 border-white rounded-lg">
+        </figure>
+    </div>
+</section>
+
 
 <script>
     function revalidate(tag: string) {
