@@ -16,9 +16,9 @@ Object.entries(headers).map(([k, v]) => {
 
 const exampleTag = tags[randomInt(0, tags.length - 1)];
 ---
-
-<section id="about">
-    <h1>À Propos</h1>
+<Layout title="Revalidation">
+    <h1 class="mb-10">À Propos</h1>
+    <section id="about">
     <div class="bio">
         <h2>Présentation</h2>
         <p>
@@ -89,6 +89,8 @@ const exampleTag = tags[randomInt(0, tags.length - 1)];
         </figure>
     </div>
 </section>
+</Layout>
+
 
 
 <script>
