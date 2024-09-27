@@ -4,14 +4,20 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+Je suis Abdelouahed, étudiant en Master d'Ingénierie des Systèmes Complexes à l'EILCO (École d’Ingénieurs du Littoral Côte d’Opale) en France, après avoir terminé une Licence en Science Mathématiques et Informatique au Maroc. Originaire du Maroc, je suis passionné par la science des données, la modélisation des systèmes complexes et la résolution de problèmes en utilisant l'intelligence artificielle et l'analyse des données.
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
+Toujours curieux et motivé, je me démarque par ma capacité à apprendre rapidement et mon désir d'explorer des solutions innovantes. Mes expériences passées en tant que stagiaire en développement d’applications web et systèmes de recommandation m'ont permis de renforcer mes compétences techniques (Python, Django, API, etc.).
+
+En tant qu'étudiant international, j'aime relever des défis et m'adapter à différents environnements tout en poursuivant mon objectif de devenir un data scientist qualifié et polyvalent.
+
+Actuellement à la recherche de nouveaux défis professionnels pour continuer à développer mes compétences, je suis prêt à m'investir pleinement dans des projets stimulants.
 `;
+
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Abdelouahed, c'est qui ?">
     <ContextAlert class="mb-4" />
-    <h1 class="mb-10">Abdelouahed, c'est qui ?</h1>
+    <h1 class="mb-10">Qui suis-je ?</h1>
+    <Markdown content={explainer} />
 </Layout>
+
